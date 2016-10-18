@@ -1,0 +1,75 @@
+.tittle{
+	padding: 0 auto;
+	margin: 0 auto;
+	background: #4889DB;
+	color: #FFFFFF;	
+}
+.city{
+	margin:  0 auto;
+	padding: 30px 0 10px 0 ;
+	font-size: 24px;
+	text-align: center;
+/*	display: inline-block;*/
+}
+.glyphicon-chevron-left{
+	font-size: 20px;
+	float: left;
+    margin-left: 10px;
+}
+.time{
+	background:#F5F5F5 ;
+	color: #4588D4;	
+	font-size: 18px;
+	line-height: 40px;
+}
+.date{	
+	display: inline-block;
+	text-align: center;
+}
+.prev,.next{
+	display: inline-block;
+	background: #F9F9F9;
+}
+.prev{
+	padding-left: 30px;
+	padding-right: 0;
+}
+#slideDown p{
+	text-align: center;
+	padding: 10px 0;
+	color: #A5B7CD;
+	margin: 0;
+}
+#slideDown{
+	background: #596674;
+}
+.ticket{
+	border-bottom: 1px solid #DFF0D8;
+}
+.footer{
+	position:fixed;
+	bottom: 0;
+	margin: 0 auto;
+}
+.btn-default{
+	background: #FFFFFF;
+	color:#4584D6 ;
+}
+.btn-default.active,.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default.focus:active, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus{
+	background: #4584D6;
+	color: #FFFFFF;
+}
+.btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover{
+	    background-color: #DDDDDD;
+    border-color: #DDDDDD;
+}
+.modal-body{
+	padding: 15px 0;
+}
+.left{
+	text-align: center;
+}
+.name{
+	font-weight: bolder;
+}
+

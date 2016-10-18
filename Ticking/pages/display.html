@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>车票查询</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/display.css" />
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="tittle">			
+			 <p class="city"><i class="glyphicon glyphicon-chevron-left" ></i>杭州&nbsp;&nbsp;至&nbsp;&nbsp;北京</p>			 
+		</div>
+		<div class="time">
+			<div class="row">
+			   <div class="col-xs-3 prev">前一天</div>
+			   <div class="col-xs-6 date">2016-9-29</div>
+			   <div class="col-xs-3 next">后一天</div>
+			</div>			
+		</div>
+		<!--松开刷新        -->
+		<div id="content"> 
+        <div id="slideDown"> 
+            <div id="slideDown1" style="display: none;"> 
+                <p>松开刷新</p> 
+            </div> 
+            <div id="slideDown2" style="display: none;"> 
+                <p>正在刷新 ...</p> 
+            </div> 
+        </div> 
+        <div class="myContent"> 
+          <div class="ticket">
+          	<img class="img-responsive" src="../img/ticket.png"/>
+          </div>
+          <div class="ticket">
+          	<img class="img-responsive" src="../img/ticket1.png"/>
+          </div>
+          <div class="ticket">
+          	<img class="img-responsive" src="../img/ticket2.png"/>
+          </div>
+        </div> 
+    </div> 		
+		<div class="btn btn-group footer">
+			<div class="btn btn-default active" id="b1">出发时间</div>
+			<div class="btn btn-default " id="b2">旅行耗时</div>
+			<div class="btn btn-default" id="b3">到达时间</div>
+		</div>
+		
+		<!--余票详情        -->
+		<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">余票详情</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="container-fluid">
+      	 <div class="row left">
+        	<div class="col-xs-3 name">
+        		<p>软卧</p>
+        	</div>
+        	<div class="col-xs-3 price">
+        		<p>￥381.5</p>
+        	</div>
+        	<div class="col-xs-3 has">
+        		<p>无票</p>
+        	</div>
+        	<div class="col-xs-3 buy">
+        		<p><button class="btn-xs btn-primary disabled">购买</button></p>
+        	</div>
+        	<div class="col-xs-3 name">
+        		<p>硬卧</p>
+        	</div>
+        	<div class="col-xs-3 price">
+        		<p>￥244.5</p>
+        	</div>
+        	<div class="col-xs-3 has">
+        		<p>无票</p>
+        	</div>
+        	<div class="col-xs-3 buy">
+        		<p><button class="btn-xs btn-primary disabled">购买</button></p>
+        	</div>
+        	<div class="col-xs-3 name">
+        		<p>硬座</p>
+        	</div>
+        	<div class="col-xs-3 price">
+        		<p>￥141.5</p>
+        	</div>
+        	<div class="col-xs-3 has">
+        		<p>30张</p>
+        	</div>
+        	<div class="col-xs-3 buy">
+        		<p><button class="btn-xs btn-primary">购买</button></p>
+        	</div>
+        	<div class="col-xs-3 name">
+        		<p>无座</p>
+        	</div>
+        	<div class="col-xs-3 price">
+        		<p>￥141.5</p>
+        	</div>
+        	<div class="col-xs-3 has">
+        		<p>140张</p>
+        	</div>
+        	<div class="col-xs-3 buy">
+        		<p><button class="btn-xs btn-primary">购买</button></p>
+        	</div>
+        	
+        </div>
+      
+      	</div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+		
+	    <script src="../js/display.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../js/refresh.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

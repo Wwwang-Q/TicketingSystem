@@ -1,0 +1,209 @@
+body{
+	background: #E9EEF3;
+}
+.container{
+	background: #E9EEF3;
+	padding: 5px;
+}
+.tittle{
+	width: 100%;
+	padding: 0 auto;
+	margin: 0 auto;
+	background: #4889DB;
+	color: #FFFFFF;
+	position: fixed;
+  top: 0;
+  z-index: 30;
+}
+.shadow{
+	padding: 0 auto;
+	margin: 0 auto;
+}
+.tittle h2,.shadow h2{
+	margin:  0 auto;
+	padding: 30px 0 10px 0 ;
+	font-size: 24px;
+	text-align: center;
+}
+#tittle2{
+	border-bottom: none;
+}
+
+#t2,#t3{
+	border-bottom:  1px solid #ddd;
+	margin: 0;
+}
+.nav-tabs li{
+	width: 33.3%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background: #FFFFFF;
+}
+.nav-pills li {	
+	width: 24.5%;
+	padding: 0;
+	margin: 0;
+	text-align: center;	
+}
+.ticket{
+	background: #FFFFFF;
+	margin: 10px 3px 0px 3px;
+	padding: 0 5px;
+}
+.tittle3{
+	height: 40px;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+	color: #8B8B8B;
+}
+.tittle3 h4{
+	font-size: 14px;
+	margin-left: 20px;
+}
+.t-body{
+	height: 90px;
+	border-bottom: 1px solid #ddd;
+}
+.row{
+	padding: 15px 10px;
+}
+.start,.final,.start1,.final1{
+	color: #000000;
+	background: #FFFFFF;
+	font-size: 22px;
+	font-weight: bolder;
+	display: block;
+	border: none;
+	width: 100%;
+    text-align: center;
+}
+.col-xs-4{
+	text-align: center;
+}
+.btn-primary{
+	width: 100%;
+	background: #4889DB;
+	font-size: 16px;
+	padding: 7px 0;
+	letter-spacing: 6px;
+}
+#change,#change1{
+	cursor: pointer;
+	margin-top: 15px;
+}
+.tittle4{
+	color: #BFC2C6;
+}
+.input-group{
+	background: #FFFFFF;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	background: #FFFFFF;
+}
+.date{
+	margin: 10px 0;
+	height: 40px;
+}
+.form-control{
+	border:none;
+}
+.student{
+	float: right;
+	line-height: 30px;
+	margin-right: 15px;
+}
+#footer{
+	z-index: 30;
+	background: #FFFFFF;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background:#4889DB ;
+}
+
+/*<------------------------------论坛---------------------------------------------------->*/
+/*松开刷新*/
+#slideDown p{
+	text-align: center;
+	padding: 10px 0;
+	color: #A5B7CD;
+	margin: 0;
+}
+#slideDown{
+	background: #596674;
+}
+.myContent{
+		background: #EEEEEE;
+	/*background: red;*/
+}
+.search{
+	padding: 10px;
+}
+input{
+	background:#d4e1ea ;
+}
+/*内容*/
+.row{
+	padding: 10px;
+}
+.item{
+	background: #FFFFFF;
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+.col-xs-2{
+	padding: 0 0 0 5px;
+}
+.col-xs-1{
+	padding: 0;
+}
+.user{
+	display: block;
+	border-radius: 100px;	
+}
+.time{
+	font-size:12px ;
+	color: #887171;
+	margin
+	: 0 0 5px;
+}
+.name{
+	font-weight: bolder;
+	color: #000000;
+	margin: 0 0 5px;
+}
+.text{
+	display: block;
+	text-indent: 2em;
+	margin-bottom: 10px;
+}
+.display{
+	width: 68%;
+	margin: 10px 0;
+}
+.foot{
+	font-size:12px ;
+	color: #887171;
+}
+.foot{
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+.ff,.ff1{
+	border-right: 1px solid #DDDDDD;
+}
+.latest,.latest1{
+	margin: 15px 20px;
+}
+.travel,.travel1{
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	color: #907c7c;	
+}
+.from,.to,.from1,.to1{
+	margin: 0 7px;
+	font-size: 18px;
+	color: #5c778e;
+}

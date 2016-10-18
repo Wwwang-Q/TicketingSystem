@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>车票预订</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/daterangepicker-bs3.css" />
+		<link rel="stylesheet" type="text/css" href="../css/cityPicker.css">
+		<!--<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />-->
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/moment.js"></script>
+		<script type="text/javascript" src="../js/daterangepicker.js"></script>
+	</head>
+
+	<body>
+
+		<!-- 预定-->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="book">
+
+				<div class="tittle">
+					<h2>车票预订</h2>
+				</div>
+				<div class="shadow">
+					<h2>预订</h2>
+				</div>
+				<ul class="nav nav-tabs" role="tablist" id="tittle2">
+					<li role="presentation" class="active">
+						<a href="#home" role="tab">单人</a>
+					</li>
+					<li role="presentation">
+						<a href="#profile" role="tab" id="t2">团体</a>
+					</li>
+					<li role="presentation">
+						<a href="#messages" role="tab" id="t3">往返</a>
+					</li>
+				</ul>
+				<!-- 车票类型 -->
+				<div class="tab-content">
+					<!--单人            -->
+
+					<div role="tabpanel" class="tab-pane active" id="home">
+						<div class="container">
+							<div class="ticket">
+								<div class="tittle3">
+									<h4>火车票</h4>
+								</div>
+								<div class="t-body">
+									<div class="row">
+										<div class="col-xs-4">
+											<p class="tittle4">出发地</p>
+											<input class="start" type="text" id="cityChoice" value="威海">
+										</div>
+										<div class="col-xs-4">
+											<p></p>
+											<img src="../img/change.png" alt="" id="change" />
+										</div>
+										<div class="col-xs-4">
+											<p class="tittle4">目的地</p>
+											<input class="final" type="text" id="cityChoice1" value="北京">
+										</div>
+									</div>
+								</div>
+								<div class="t-footer">
+									<div class="date">
+										<form class="form-horizontal">
+											<div class="input-prepend input-group ">
+												<span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span><input type="text" readonly style="width: 120px" name="birthday" id="birthday" class="form-control" value="2016-10-16" />
+												<div class="student">
+													<input type="checkbox" />&nbsp;&nbsp;学生
+												</div>
+											</div>
+
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="btn btn-primary" id="find">
+								查询
+							</div>
+						</div>
+
+						<!--最近查询             -->
+						<div class="latest">
+							<div class="travel">
+								<span class="from">忻州市</span>至<span class="to">北京</span>
+							</div>
+							<div class="travel">
+								<span class="from">杭州</span>至<span class="to">上海</span>
+							</div>	
+						</div>
+						
+					</div>
+					<div role="tabpanel" class="tab-pane" id="profile">
+						<div class="container">
+							<div class="ticket">
+								<div class="tittle3">
+									<h4>火车票</h4>
+								</div>
+								<div class="t-body">
+									<div class="row">
+										<div class="col-xs-4">
+											<p class="tittle4">出发地</p>
+											<input class="start1" type="text" id="cityChoice2" value="威海">
+										</div>
+										<div class="col-xs-4">
+											<p></p>
+											<img src="../img/change.png" alt="" id="change1" />
+										</div>
+										<div class="col-xs-4">
+											<p class="tittle4">目的地</p>
+											<input class="final1" type="text" id="cityChoice3" value="北京">
+										</div>
+									</div>
+								</div>
+								<div class="t-footer">
+									<div class="date">
+										<form class="form-horizontal">
+											<div class="input-prepend input-group ">
+												<span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span><input type="text" readonly style="width: 120px" name="birthday" id="birthday1" class="form-control" value="03/18/2013" />
+
+											</div>
+
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="btn btn-primary" id="find1">
+								查询
+							</div>
+						</div>
+                         <!--最近查询             -->
+						<div class="latest1">
+							<div class="travel1">
+								<span class="from1">上海</span>至<span class="to1">杭州</span>
+							</div>							
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="messages">NULL</div>
+				</div>
+			</div>
+
+			<div role="tabpanel" class="tab-pane ">..2.</div>
+			<div role="tabpanel" class="tab-pane " id="forum">
+				<div class="tittle">
+					<h2>论坛</h2>
+				</div>
+				<div class="shadow">
+					<h2>论坛</h2>
+				</div>
+				<!--松开刷新        -->
+				<div id="content">
+					<div id="slideDown">
+						<div id="slideDown1" style="display: none;">
+							<p>松开刷新</p>
+						</div>
+						<div id="slideDown2" style="display: none;">
+							<p>正在刷新 ...</p>
+						</div>
+					</div>
+					<div class="myContent">
+						<div class="search">
+							<div class="input-group input-group-sm">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+								<input type="text" class="form-control" placeholder="搜索" name="" id="se" value="" />
+							</div>
+						</div>	
+                        <div class="item">
+                        	<div class="row">
+                        		<div class="col-xs-2"><img class="img-responsive user" src="../img/a.jpg"/></div>
+                        		<div class="col-xs-9 tt">
+                        			<p class="name">刘雯</p>
+                        			<p class="time">10月5日&nbsp;&nbsp;23:52</p>
+                        		</div>
+                        		<div class="col-xs-1">
+                        			<span class="glyphicon glyphicon-chevron-down"></span>
+                        		</div>                        	
+                        	</div>
+                        	<div class="body">
+                        		<span class="text">又一季时装周，在@珑骧Longchamp 活动中美丽结束，谢谢大家的支持和关心！[心][心][心]</span>
+                        		<img class="img-responsive display" src="../img/b.jpg" alt="" />
+                        	</div>
+                          <div class="foot">
+                          	<div class="row">
+                          		<div class="col-xs-4 ff">点赞</div>
+                          		<div class="col-xs-4 ff1">评论</div>
+                          		<div class="col-xs-4 ff2">打赏</div>
+                          	</div>                          	
+                          </div>
+                        </div>
+						
+						<div class="item">
+                        	<div class="row">
+                        		<div class="col-xs-2"><img class="img-responsive user" src="../img/z.jpg"/></div>
+                        		<div class="col-xs-9 tt">
+                        			<p class="name">薛之谦</p>
+                        			<p class="time">10月5日&nbsp;&nbsp;23:54</p>
+                        		</div>
+                        		<div class="col-xs-1">
+                        			<span class="glyphicon glyphicon-chevron-down"></span>
+                        		</div>                        	
+                        	</div>
+                        	<div class="body">
+                        		<span class="text">不是我不愿意写段子....是我连续7天睡4个小时了....累到奶疼......让我喘口气先.... </span>
+                        		<!--<img class="img-responsive display" src="" alt="" />-->
+                        	</div>
+                          <div class="foot">
+                          	<div class="row">
+                          		<div class="col-xs-4 ff">点赞</div>
+                          		<div class="col-xs-4 ff1">评论</div>
+                          		<div class="col-xs-4 ff2">打赏</div>
+                          	</div>                          	
+                          </div>
+                        </div>
+						
+						<div class="item">
+                        	<div class="row">
+                        		<div class="col-xs-2"><img class="img-responsive user" src="../img/e.jpg"/></div>
+                        		<div class="col-xs-9 tt">
+                        			<p class="name">北京交通大学</p>
+                        			<p class="time">10月5日&nbsp;&nbsp;23:52</p>
+                        		</div>
+                        		<div class="col-xs-1">
+                        			<span class="glyphicon glyphicon-chevron-down"></span>
+                        		</div>                        	
+                        	</div>
+                        	<div class="body">
+                        		<span class="text">最美的不是昨日上海的雨天，是和你一起躲过雨的屋檐[熊猫][下雨][下雨]</span>
+                        		<img class="img-responsive display" src="../img/f.jpg" alt="" />
+                        	</div>
+                          <div class="foot">
+                          	<div class="row">
+                          		<div class="col-xs-4 ff">点赞</div>
+                          		<div class="col-xs-4 ff1">评论</div>
+                          		<div class="col-xs-4 ff2">打赏</div>
+                          	</div>                          	
+                          </div>
+                        </div>
+						
+					</div>
+				</div>
+
+			</div>
+			<div role="tabpanel" class="tab-pane ">..4.</div>
+		</div>
+
+		<!--footer-->
+		<ul class="nav nav-pills navbar-fixed-bottom" role="tablist" id="footer">
+			<li role="presentation" class="active">
+				<a href="#book" role="tab" data-toggle="tab">预定</a>
+			</li>
+			<li role="presentation">
+				<a href="#search" role="tab" data-toggle="tab">订单</a>
+			</li>
+			<li role="presentation" >
+				<a href="#forum" role="tab" data-toggle="tab">论坛</a>
+			</li>
+			<li role="presentation">
+				<a href="#mine" role="tab" data-toggle="tab">我的</a>
+			</li>
+		</ul>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<script type="text/javascript" src="../js/daterangepicker.js"></script>
+		<script type="text/javascript" src="../js/moment.js"></script>
+		<script src="../js/refresh.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="../js/cityData.js"></script>
+<script type="text/javascript" src="../js/cityPicker.js"></script>
+<script src="../js/city.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>
